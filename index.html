@@ -30,8 +30,20 @@
                 <input id="add-item" type="text" placeholder="Adicione um novo item">
                 <button id="add-btn">Adicionar item</button>
             </div>
+
+            <section class="list-container" id="list-container"></section>
+
+            <div class="toast" id="toast" role="status" aria-live="polite">
+                <div class="toast-content">
+                    <img class="toast-icon" src="/img/warning-circle-filled.svg" alt="">
+                    <span id="toast-message"></span>
+                </div>
+                <button id="toast-close" type="button" aria-label="Fechar aviso">×</button>
+            </div>
         </div>
     </div>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
