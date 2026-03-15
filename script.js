@@ -140,7 +140,7 @@ function createTaskMarkup(task) {
             </button>
             <span class="item-name">${escapedName}</span>
             <button class="trash-icon-envelope" data-action="delete" aria-label="Remover tarefa" type="button">
-                <img src="/img/trash.svg" alt="">
+                <img src="img/trash.svg" alt="">
             </button>
         </div>
     `;
