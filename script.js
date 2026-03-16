@@ -99,7 +99,12 @@ function handleAddTask() {
     renderTasks();
     showToast("success", "Nova tarefa adicionada");
     addInput.value = "";
-    addInput.focus();
+    const isMobile = window.matchMedia("(pointer: coarse)").matches;
+    if (isMobile) {
+        addInput.blur();
+    } else {
+        addInput.focus();
+    }
 }
 
 function toggleTaskStatus(taskId) {
