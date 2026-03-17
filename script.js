@@ -97,7 +97,7 @@ function handleAddTask() {
     tasks.push(task);
     saveTasks();
     renderTasks();
-    showToast("success", "Novo item adicionado à lista.");
+    showToast("success", "O item foi adicionado à lista.");
     addInput.value = "";
     const isMobile = window.matchMedia("(pointer: coarse)").matches;
     if (isMobile) {
